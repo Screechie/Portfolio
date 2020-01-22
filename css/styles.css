@@ -8,6 +8,7 @@ html, body {
 }
 
 .container {
+  cursor: crosshair;
   height: 100%;
   width: 100%;
 }
@@ -47,6 +48,10 @@ html, body {
 
 .navbar ul li a:hover {
   opacity: 0.7;
+}
+
+.navbar ul li a:active {
+  color: #01203f;
 }
 
 .logo {
@@ -155,7 +160,46 @@ html, body {
   background-repeat: no-repeat;
 }
 
-.con-form {
+.form-container {
+  background-color: lightgray;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.con-form {
+  height: 70%;
+  width: 70%;
+}
+
+.con-input {
+  border-radius: 20px;
+  height: 10%;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.con-button {
+  background-color: gray;
+  color: #fff;
+  font-size: 2em;
+  height: 15%;
+  width: 50%;
+}
+
+.con-form > input::placeholder{
+  font-size: 2em;
+  padding-left: 5%;
+}
+
+.con-textarea {
+  border-radius: 20px;
+  height: 50%;
+  margin: 0 0 10% 0;
+  width: 100%;
+}
+
+.con-textarea::placeholder {
+  font-size: 2em;
+  padding: 2% 0 0 5%;
 }

@@ -31,12 +31,15 @@
         <span class="text1">Passionate about development </span>
       </h1>
       <div class="bio">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quia eligendi. Velit possimus cupiditate
-          ullam libero cumque accusantium minus facilis, obcaecati accusamus ex iste, veritatis quam enim quos ipsa? Similique
-          soluta minima doloribus debitis delectus dolore, eos quasi enim sint provident iste nulla, architecto aut molestias
-          molestiae minus maxime.
-        </p>
+        <blockquote>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quia eligendi. Velit possimus cupiditate
+            ullam libero cumque accusantium minus facilis, obcaecati accusamus ex iste, veritatis quam enim quos ipsa? Similique
+            soluta minima doloribus debitis delectus dolore, eos quasi enim sint provident iste nulla, architecto aut molestias
+            molestiae minus maxime.
+          </p>
+        </blockquote>
+        
       </div>
       
     </div>
@@ -58,11 +61,12 @@
     <!-- Contact Page -->
     <div id="contact" class="contact page">
       <aside class="bg-contact"></aside>
-      <div class="con-form">
-        <form action="">
-          <input type="text" placeholder="FULLNAME" required>
-          <input type="email" placeholder="EMAIL" required>
-          <button>SEND</button>
+      <div class="form-container">
+        <form action="" class="con-form">
+          <input class="con-input" name="fullname" type="text" placeholder="FULLNAME" required>
+          <input class="con-input" name="email" type="email" placeholder="EMAIL" required>
+          <textarea class="con-textarea" name="con-textarea" placeholder="LET'S GET IN CONTACT..."></textarea>
+          <button class="con-button" type="submit">SEND</button>
         </form>
       </div>
     </div>
@@ -71,7 +75,7 @@
   </div>
   <!-- Main container ends here -->
 
-  <!-- IonIcons Script -->
+  <!-- Scripts placed at bottom to reduce impact on page load use defer attribute if script is placed in head -->
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
 </body>
 </html>
