@@ -59,6 +59,10 @@ html, body {
   margin-left: 35px;
 }
 
+.menu:hover {
+  opacity: 0.7;
+}
+
 .nav-link {
   margin-left: 35px;
 }
@@ -72,9 +76,86 @@ html, body {
 }
 
 .home {
-  display: grid;
+  display: grid;/*Grid divides home page into 4 quandrants*/
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: ". bio"
+                        "typing typing";
+}
+
+.bio {
+  align-items: flex-end;
+  color: #fff;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  grid-area: bio;
+  justify-content: flex-end;
+  max-width: 70%;
+}
+
+.typing {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  grid-area: typing;
+}
+
+.text1{
+  animation: typewriter;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(25, end);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;/*ensures text doesn't wrap to next line*/
+
+}
+
+.text1::after {
+  animation: underscore infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+  content: "_";
+}
+/* Typewriter animations */
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 14em;
+  }
+}
+@keyframes underscore {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /* Work Page Styles */
 /* Skills Styles */
 /* Contact Styles */
+.contact {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "sidebar con-form";
+}
+
+.bg-contact {
+  background-image: url("../assets/background_contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.con-form {
+  display: flex;
+  align-items: center;
+}
