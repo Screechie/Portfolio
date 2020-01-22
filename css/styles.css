@@ -26,6 +26,7 @@ html, body {
 
 .navbar > ul {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -44,8 +45,22 @@ html, body {
   text-decoration: none;
 }
 
+.navbar ul li a:hover {
+  opacity: 0.7;
+}
+
 .logo {
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+.menu{
+  color: #fff;
+  font-size: 64px;
+  margin-left: 35px;
+}
+
+.nav-link {
+  margin-left: 35px;
 }
 /*--------------- Page Styles---------------*/
 /* Homepage Styles */
