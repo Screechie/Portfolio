@@ -95,8 +95,8 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   grid-area: bio;
-  justify-content: flex-end;
-  max-width: 70%;
+  margin-left: auto;
+  max-width: 60%;
 }
 
 .typing {
@@ -145,7 +145,67 @@ html, body {
 
 /* Work Page Styles */
 /* Skills Styles */
-/* Contact Styles */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "graph summary"
+                        "highlight highlight";
+}
+
+.skills-table {
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin: 12% 0 0 4%;
+  grid-area: graph;
+}
+
+.skills-table thead {
+  color: gray;
+  text-align: left;
+}
+
+.skills-table tr td {
+  height: 2em;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  grid-area: summary;
+  width: 100%;
+}
+
+.summary-title {
+  color: gray;
+}
+
+.summary-title, .skills-summary {
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills-summary {
+  font-size: 1.5em;
+}
+
+.resume-link {
+  border: 1px solid gray;
+  color: #fff;
+  background-color: dodgerblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 7%;
+  padding-top: 3%;
+  width: 23%;
+  text-decoration: none;
+  text-align: center;
+}
+/* Contact Page Styles */
 .contact {
   display: grid;
   grid-template-rows: 1fr;
@@ -158,6 +218,11 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.con-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 }
 
 .form-container {
@@ -183,23 +248,69 @@ html, body {
   background-color: gray;
   color: #fff;
   font-size: 2em;
+  font-family: 'Roboto', sans-serif;
   height: 15%;
   width: 50%;
 }
 
 .con-form > input::placeholder{
   font-size: 2em;
+  font-family: 'Roboto', sans-serif;
   padding-left: 5%;
 }
 
 .con-textarea {
   border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
   height: 50%;
-  margin: 0 0 10% 0;
+  margin: 0 0 5% 0;
   width: 100%;
 }
 
 .con-textarea::placeholder {
-  font-size: 2em;
+  
   padding: 2% 0 0 5%;
+}
+
+/* Footer Styles */
+footer {
+  align-items: center;
+  background-color: gray;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  position: fixed;
+  width: 100%;
+}
+
+footer > li {
+  list-style-type: none;
+  margin: 0 2% 0 0;
+}
+
+footer li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  opacity: 0.7;
+}
+
+footer li a:active {
+  color: #01203f;
+}
+
+.copy {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 0 auto 0 2%;
+}
+
+.foot-icon {
+  font-size: 5em;
 }
