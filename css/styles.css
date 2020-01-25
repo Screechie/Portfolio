@@ -144,6 +144,52 @@ html, body {
 }
 
 /* Work Page Styles */
+.work {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 6fr 1fr ;
+  grid-template-areas: "left-arrow main right-arrow";
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%;
+  grid-area: left-arrow;
+}
+
+.left-icon, .right-icon {
+  color: gray;
+  font-size: 5em;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  grid-area: right-arrow;
+  width: 100%;
+}
+
+.gallery-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dodgerblue;
+  border: 1px solid gray; 
+  min-height: 80%;
+  min-width: 80%;
+}
+
+.gallery-description{
+  font-family: 'Roboto',sans-serif;
+  color: white;
+}
 /* Skills Styles */
 .skills {
   display: grid;
@@ -190,6 +236,8 @@ html, body {
 
 .skills-summary {
   font-size: 1.5em;
+  line-height: 1.75em;
+  padding-right: 5%;
 }
 
 .resume-link {
@@ -199,9 +247,9 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  height: 7%;
-  padding-top: 3%;
-  width: 23%;
+  height: 15%;
+  padding: 2%;
+  width: 25%;
   text-decoration: none;
   text-align: center;
 }
@@ -312,5 +360,5 @@ footer li a:active {
 }
 
 .foot-icon {
-  font-size: 5em;
+  font-size: 3em;
 }
