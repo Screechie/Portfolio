@@ -22,8 +22,8 @@ emailValidate = () => {
     message.innerHTML = "Email field is required!";
     btn.disabled = true;
   }
-  else if(!(emailInput.includes('@'))){
-    // Conside replacing with email regex
+  else if(!(emailInput.includes('@'))){//replace with email regex
+    btn.disabled = true;
     message.innerHTML = "Please enter a valid email address";
   }
   else {
