@@ -20,7 +20,7 @@ html, body {
 /* Navbar Styles */
 .navbar {
   background-color: gray;
-  position: fixed;
+  position: sticky;
   height: 10%;
   width: 100%;
 }
@@ -29,6 +29,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 
 .navbar ul li:nth-child(1){
@@ -41,7 +42,7 @@ html, body {
 
 .navbar ul li a{
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fff;
   text-decoration: none;
 }
@@ -54,8 +55,10 @@ html, body {
   color: #01203f;
 }
 
-.logo {
-  font-weight: bolder;
+.navbar ul li a.logo {
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 2em;
+  /* font-weight: bolder; */
 }
 
 .menu{
@@ -287,9 +290,14 @@ html, body {
 
 .con-input {
   border-radius: 20px;
-  height: 10%;
+  height: 7%;
   margin: 0 0 20px 0;
   width: 100%;
+}
+
+.con-form input[type="text"], .con-form input[type="email"], .con-form textarea {
+  font-size: 1.5em;
+  padding-left: 5%;
 }
 
 .con-button {
@@ -302,23 +310,16 @@ html, body {
 }
 
 .con-form > input::placeholder{
-  font-size: 2em;
   font-family: 'Roboto', sans-serif;
-  padding-left: 5%;
 }
 
 .con-textarea {
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   height: 50%;
   margin: 0 0 5% 0;
   width: 100%;
-}
-
-.con-textarea::placeholder {
-  
-  padding: 2% 0 0 5%;
 }
 
 /* Footer Styles */
@@ -361,4 +362,42 @@ footer li a:active {
 
 .foot-icon {
   font-size: 3em;
+}
+
+/* Validation Styles */
+.email-message {
+  font-family: 'Roboto', sans-serif;
+  height: 2%;
+  margin: 2% auto;
+  position: absolute;
+  text-align: center;
+  top: 2%;
+  width: 30%;
+}
+
+.fullname-message {
+  height: 2%;
+  margin: 2% auto;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 30%;
+}
+
+form > .messages {
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2%;
+}
+
+button[disabled] {
+  opacity: .2;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1550px) {
+  .bio {
+    margin-top: 10%;
+    width: 80%;
+  }
 }

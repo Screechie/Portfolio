@@ -6,8 +6,9 @@
   <meta name="description" content="Simeon Bourne's developer portfolio">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Simeon Bourne Rocks</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto:100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/portfolio.js"></script>
 </head>
 <body>
   <!-- Main container -->
@@ -16,7 +17,7 @@
     <header>
       <nav class="navbar">
         <ul>          
-          <li class="logo"><a href="#home">SB</a></li>
+          <li><a href="#home" class="logo">simeonbourne.com</a></li>
           <li class="nav-link"><a href="#work">MY WORK</a></li>
           <li class="nav-link"><a href="#skills">SKILLS</a></li>
           <li class="nav-link"><a href="#contact">CONTACT</a></li>
@@ -126,13 +127,13 @@
     <!-- Contact Page -->
     <div id="contact" class="contact page">
       <aside class="bg-contact"></aside>
-      <div class="form-container">
+      <div class="form-container" id="form-container">
         <!-- <h1 class="con-title">&lt; CONTACT /&gt;</h1> -->
-        <form action="" class="con-form">
-          <input class="con-input" name="fullname" type="text" placeholder="FULLNAME" required>
-          <input class="con-input" name="email" type="email" placeholder="EMAIL" required>
-          <textarea class="con-textarea" name="con-textarea" placeholder="LET'S GET IN CONTACT..."></textarea>
-          <button class="con-button" type="submit">SEND</button>
+        <form action="" class="con-form" id="con-form">
+          <input class="con-input" id="fullname" name="fullname" type="text" placeholder="FULLNAME" onblur="nameValidate()" required>
+          <input class="con-input" id="email" name="email" type="email" placeholder="EMAIL" onblur="emailValidate()"required>
+          <textarea class="con-textarea" id="con-textarea" name="con-textarea" placeholder="LET'S GET IN CONTACT..." onblur="textareaValidate()"></textarea>
+          <button class="con-button" id="con-button" type="submit">SEND</button>
         </form>
       </div>
     </div>
