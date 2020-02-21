@@ -58,3 +58,5 @@ textareaValidate = () => {
   }
 
 }
+
+//Load PDF resume

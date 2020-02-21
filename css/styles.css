@@ -20,7 +20,7 @@ html, body {
 /* Navbar Styles */
 .navbar {
   background-color: gray;
-  position: sticky;
+  position: fixed;
   height: 10%;
   width: 100%;
 }
@@ -29,7 +29,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .navbar ul li:nth-child(1){
@@ -365,7 +365,7 @@ footer li a:active {
 }
 
 /* Validation Styles */
-.email-message {
+/* .email-message {
   font-family: 'Roboto', sans-serif;
   height: 2%;
   margin: 2% auto;
@@ -382,7 +382,7 @@ footer li a:active {
   text-align: center;
   top: 0;
   width: 30%;
-}
+} */
 
 form > .messages {
   color: red;
