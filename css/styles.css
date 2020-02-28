@@ -41,7 +41,7 @@ html, body {
 }
 
 .navbar ul li a{
-  font-family: 'Indie Flower', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
@@ -215,8 +215,19 @@ html, body {
   text-align: left;
 }
 
+.skills-table tr {
+  height: 2em;
+}
+
+
 .skills-table tr td {
   height: 2em;
+  width: 40%;
+}
+
+.skills-table tr td:nth-child(2){
+  color:gray;
+  /* background-color: #000; */
 }
 
 .summary-container {
